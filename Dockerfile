@@ -1,6 +1,7 @@
 FROM r-base:4.4.1
 LABEL maintainer="csorianota"
-RUN export DEBIAN_FRONTEND=noninteractive; apt-get -y update \
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y apt-transport-https \
   && apt-get install -y git-core \
 	libcairo2-dev \
 	libcurl4-openssl-dev \
