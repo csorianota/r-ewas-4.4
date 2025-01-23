@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y apt-transport-https \
 	libxt-dev \
 	make \
 	pandoc \
-	citeproc \
 	zlib1g-dev 
 RUN ["install2.r", "arsenal", "BiocManager", "bit","cellranger","Cairo","Ckmeans.1d.dp", "cluster", "corrplot", "curl", "data.table", "DBI", "dbplyr", "devtools", "doParallel", "dotCall64", "dplyr", "DT", "fastICA", "ff", "fields", "forcats", "foreach", "foreign", "Formula", "futile.logger", "gap", "ggforce", "ggplot2", "ggraph", "gplots", "gridExtra", "gtable", "gtools", "haplo.stats", "Hmisc", "igraph", "isva", "iterators", "JADE", "kableExtra", "knitr", "lattice", "littler", "lme4", "lmtest", "locfit", "maps", "markdown", "MASS", "Matrix", "MatrixEQTL", "MatrixModels", "matrixStats", "mgcv", "multcomp", "mvtnorm", "nlme", "plyr", "psych", "purrr", "qqman", "quadprog", "RColorBrewer", "Rcpp", "RcppArmadillo", "RcppEigen", "RCurl", "readr", "remotes", "reshape2", "rlang", "rmarkdown", "RSpectra", "sandwich", "scales", "shiny", "shinyFiles", "shinythemes", "SmartSVA", "SNPassoc", "spam", "statmod", "stringr", "survival", "TH.data", "tibble", "tidyr", "tidyselect", "tidyverse", "tinytex", "usethis", "VennDiagram", "XML", "xtable", "zip", "zoo"]
 RUN install2.r --error BiocManager
